@@ -1,0 +1,786 @@
+{
+  "type": "object",
+  "properties": {
+    "mappings": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "request": {
+              "type": "object",
+              "properties": {
+                "method": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "method"
+              ]
+            },
+            "response": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "integer"
+                },
+                "headers": {
+                  "type": "object",
+                  "properties": {
+                    "Access-Control-Allow-Origin": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "Access-Control-Allow-Origin"
+                  ]
+                }
+              },
+              "required": [
+                "status",
+                "headers"
+              ]
+            }
+          },
+          "required": [
+            "request",
+            "response"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "request": {
+              "type": "object",
+              "properties": {
+                "method": {
+                  "type": "string"
+                },
+                "urlPathPattern": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "method",
+                "urlPathPattern"
+              ]
+            },
+            "response": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "integer"
+                },
+                "headers": {
+                  "type": "object",
+                  "properties": {
+                    "Access-Control-Allow-Origin": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "Access-Control-Allow-Origin"
+                  ]
+                }
+              },
+              "required": [
+                "status",
+                "headers"
+              ]
+            }
+          },
+          "required": [
+            "request",
+            "response"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "request": {
+              "type": "object",
+              "properties": {
+                "method": {
+                  "type": "string"
+                },
+                "urlPathPattern": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "method",
+                "urlPathPattern"
+              ]
+            },
+            "response": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "integer"
+                },
+                "headers": {
+                  "type": "object",
+                  "properties": {
+                    "Access-Control-Allow-Origin": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "Access-Control-Allow-Origin"
+                  ]
+                }
+              },
+              "required": [
+                "status",
+                "headers"
+              ]
+            }
+          },
+          "required": [
+            "request",
+            "response"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "request": {
+              "type": "object",
+              "properties": {
+                "method": {
+                  "type": "string"
+                },
+                "urlPathPattern": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "method",
+                "urlPathPattern"
+              ]
+            },
+            "response": {
+              "type": "object",
+              "properties": {
+                "fixedDelayMilliseconds": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "integer"
+                },
+                "jsonBody": {
+                  "type": "object",
+                  "properties": {
+                    "terminalId": {
+                      "type": "string"
+                    },
+                    "cardNumber": {
+                      "type": "string"
+                    },
+                    "expiryDate": {
+                      "type": "string"
+                    },
+                    "plasticId": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "terminalId",
+                    "cardNumber",
+                    "expiryDate",
+                    "plasticId"
+                  ]
+                },
+                "headers": {
+                  "type": "object",
+                  "properties": {
+                    "Content-Type": {
+                      "type": "string"
+                    },
+                    "Access-Control-Allow-Origin": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "Content-Type",
+                    "Access-Control-Allow-Origin"
+                  ]
+                }
+              },
+              "required": [
+                "fixedDelayMilliseconds",
+                "status",
+                "jsonBody",
+                "headers"
+              ]
+            }
+          },
+          "required": [
+            "request",
+            "response"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "request": {
+              "type": "object",
+              "properties": {
+                "method": {
+                  "type": "string"
+                },
+                "urlPathPattern": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "method",
+                "urlPathPattern"
+              ]
+            },
+            "response": {
+              "type": "object",
+              "properties": {
+                "fixedDelayMilliseconds": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "integer"
+                },
+                "jsonBody": {
+                  "type": "object",
+                  "properties": {
+                    "terminalId": {
+                      "type": "string"
+                    },
+                    "cardNumber": {
+                      "type": "string"
+                    },
+                    "expiryDate": {
+                      "type": "string"
+                    },
+                    "plasticId": {
+                      "type": "string"
+                    },
+                    "encryptedTrack2": {
+                      "type": "string"
+                    },
+                    "pinBlock": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "terminalId",
+                    "cardNumber",
+                    "expiryDate",
+                    "plasticId",
+                    "encryptedTrack2",
+                    "pinBlock"
+                  ]
+                },
+                "headers": {
+                  "type": "object",
+                  "properties": {
+                    "Content-Type": {
+                      "type": "string"
+                    },
+                    "Access-Control-Allow-Origin": {
+                      "type": "string"
+                    },
+                    "Access-Control-Allow-Methods": {
+                      "type": "string"
+                    },
+                    "Access-Control-Request-Headers": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "Content-Type",
+                    "Access-Control-Allow-Origin",
+                    "Access-Control-Allow-Methods",
+                    "Access-Control-Request-Headers"
+                  ]
+                }
+              },
+              "required": [
+                "fixedDelayMilliseconds",
+                "status",
+                "jsonBody",
+                "headers"
+              ]
+            }
+          },
+          "required": [
+            "request",
+            "response"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "request": {
+              "type": "object",
+              "properties": {
+                "method": {
+                  "type": "string"
+                },
+                "urlPathPattern": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "method",
+                "urlPathPattern"
+              ]
+            },
+            "response": {
+              "type": "object",
+              "properties": {
+                "fixedDelayMilliseconds": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "integer"
+                },
+                "jsonBody": {
+                  "type": "object",
+                  "properties": {
+                    "terminalId": {
+                      "type": "string"
+                    },
+                    "cardNumber": {
+                      "type": "string"
+                    },
+                    "expiryDate": {
+                      "type": "string"
+                    },
+                    "plasticId": {
+                      "type": "string"
+                    },
+                    "pinBlock": {
+                      "type": "string"
+                    },
+                    "track2TechInfo": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "terminalId",
+                    "cardNumber",
+                    "expiryDate",
+                    "plasticId",
+                    "pinBlock",
+                    "track2TechInfo"
+                  ]
+                },
+                "headers": {
+                  "type": "object",
+                  "properties": {
+                    "Content-Type": {
+                      "type": "string"
+                    },
+                    "Access-Control-Allow-Origin": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "Content-Type",
+                    "Access-Control-Allow-Origin"
+                  ]
+                }
+              },
+              "required": [
+                "fixedDelayMilliseconds",
+                "status",
+                "jsonBody",
+                "headers"
+              ]
+            }
+          },
+          "required": [
+            "request",
+            "response"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "request": {
+              "type": "object",
+              "properties": {
+                "method": {
+                  "type": "string"
+                },
+                "urlPathPattern": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "method",
+                "urlPathPattern"
+              ]
+            },
+            "response": {
+              "type": "object",
+              "properties": {
+                "fixedDelayMilliseconds": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "integer"
+                },
+                "jsonBody": {
+                  "type": "object",
+                  "properties": {
+                    "terminalId": {
+                      "type": "string"
+                    },
+                    "cardNumber": {
+                      "type": "string"
+                    },
+                    "expiryDate": {
+                      "type": "string"
+                    },
+                    "plasticId": {
+                      "type": "string"
+                    },
+                    "errorMessage": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "terminalId",
+                    "cardNumber",
+                    "expiryDate",
+                    "plasticId",
+                    "errorMessage"
+                  ]
+                },
+                "headers": {
+                  "type": "object",
+                  "properties": {
+                    "Content-Type": {
+                      "type": "string"
+                    },
+                    "Access-Control-Allow-Origin": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "Content-Type",
+                    "Access-Control-Allow-Origin"
+                  ]
+                }
+              },
+              "required": [
+                "fixedDelayMilliseconds",
+                "status",
+                "jsonBody",
+                "headers"
+              ]
+            }
+          },
+          "required": [
+            "request",
+            "response"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "request": {
+              "type": "object",
+              "properties": {
+                "method": {
+                  "type": "string"
+                },
+                "urlPathPattern": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "method",
+                "urlPathPattern"
+              ]
+            },
+            "response": {
+              "type": "object",
+              "properties": {
+                "fixedDelayMilliseconds": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "integer"
+                },
+                "jsonBody": {
+                  "type": "object",
+                  "properties": {
+                    "pinBlock": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "pinBlock"
+                  ]
+                },
+                "headers": {
+                  "type": "object",
+                  "properties": {
+                    "Content-Type": {
+                      "type": "string"
+                    },
+                    "Access-Control-Allow-Origin": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "Content-Type",
+                    "Access-Control-Allow-Origin"
+                  ]
+                }
+              },
+              "required": [
+                "fixedDelayMilliseconds",
+                "status",
+                "jsonBody",
+                "headers"
+              ]
+            }
+          },
+          "required": [
+            "request",
+            "response"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "request": {
+              "type": "object",
+              "properties": {
+                "method": {
+                  "type": "string"
+                },
+                "urlPathPattern": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "method",
+                "urlPathPattern"
+              ]
+            },
+            "response": {
+              "type": "object",
+              "properties": {
+                "fixedDelayMilliseconds": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "integer"
+                },
+                "jsonBody": {
+                  "type": "object",
+                  "properties": {
+                    "pinBlock": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "pinBlock"
+                  ]
+                },
+                "headers": {
+                  "type": "object",
+                  "properties": {
+                    "Content-Type": {
+                      "type": "string"
+                    },
+                    "Access-Control-Allow-Origin": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "Content-Type",
+                    "Access-Control-Allow-Origin"
+                  ]
+                }
+              },
+              "required": [
+                "fixedDelayMilliseconds",
+                "status",
+                "jsonBody",
+                "headers"
+              ]
+            }
+          },
+          "required": [
+            "request",
+            "response"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "scenarioName": {
+              "type": "string"
+            },
+            "requiredScenarioState": {
+              "type": "string"
+            },
+            "newScenarioState": {
+              "type": "string"
+            },
+            "request": {
+              "type": "object",
+              "properties": {
+                "method": {
+                  "type": "string"
+                },
+                "urlPathPattern": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "method",
+                "urlPathPattern"
+              ]
+            },
+            "response": {
+              "type": "object",
+              "properties": {
+                "fixedDelayMilliseconds": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "integer"
+                },
+                "jsonBody": {
+                  "type": "object",
+                  "properties": {
+                    "pinBlock": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "pinBlock"
+                  ]
+                },
+                "headers": {
+                  "type": "object",
+                  "properties": {
+                    "Content-Type": {
+                      "type": "string"
+                    },
+                    "Access-Control-Allow-Origin": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "Content-Type",
+                    "Access-Control-Allow-Origin"
+                  ]
+                }
+              },
+              "required": [
+                "fixedDelayMilliseconds",
+                "status",
+                "jsonBody",
+                "headers"
+              ]
+            }
+          },
+          "required": [
+            "scenarioName",
+            "requiredScenarioState",
+            "newScenarioState",
+            "request",
+            "response"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "scenarioName": {
+              "type": "string"
+            },
+            "requiredScenarioState": {
+              "type": "string"
+            },
+            "newScenarioState": {
+              "type": "string"
+            },
+            "request": {
+              "type": "object",
+              "properties": {
+                "method": {
+                  "type": "string"
+                },
+                "urlPathPattern": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "method",
+                "urlPathPattern"
+              ]
+            },
+            "response": {
+              "type": "object",
+              "properties": {
+                "fixedDelayMilliseconds": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "integer"
+                },
+                "jsonBody": {
+                  "type": "object",
+                  "properties": {
+                    "pinBlock": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "pinBlock"
+                  ]
+                },
+                "headers": {
+                  "type": "object",
+                  "properties": {
+                    "Content-Type": {
+                      "type": "string"
+                    },
+                    "Access-Control-Allow-Origin": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "Content-Type",
+                    "Access-Control-Allow-Origin"
+                  ]
+                }
+              },
+              "required": [
+                "fixedDelayMilliseconds",
+                "status",
+                "jsonBody",
+                "headers"
+              ]
+            }
+          },
+          "required": [
+            "scenarioName",
+            "requiredScenarioState",
+            "newScenarioState",
+            "request",
+            "response"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "mappings"
+  ]
+}
